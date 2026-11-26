@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DompetKeluarga — Anggaran Rumah Tangga Keluarga Santoso</title>
+<meta name="description" content="DompetKeluarga: catat pemasukan dan pengeluaran, jaga anggaran tiap kategori, dan kumpulkan tabungan untuk tujuan keluarga. Berjalan sepenuhnya di peramban, tanpa akun dan tanpa internet.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#/" aria-label="DompetKeluarga — kembali ke dasbor">
+      <span class="brand-mark" aria-hidden="true">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true">
+          <rect x="2" y="7" width="26" height="18" rx="4" fill="#2e7d5b"/>
+          <rect x="2" y="7" width="26" height="6" rx="3" fill="#256b4e"/>
+          <circle cx="21" cy="16" r="3.4" fill="#fbbf24"/>
+          <circle cx="21" cy="16" r="1.4" fill="#92400e"/>
+        </svg>
+      </span>
+      <span class="brand-text"><strong>DompetKeluarga</strong><small>Anggaran rumah tangga</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Navigasi utama">
+      <a href="#/" class="nav-link active" aria-current="page">Dasbor</a>
+      <a href="#/transaksi" class="nav-link">Transaksi</a>
+      <a href="#/anggaran" class="nav-link">Anggaran</a>
+      <a href="#/tabungan" class="nav-link">Tabungan</a>
+      <a href="#/laporan" class="nav-link">Laporan</a>
+    </nav>
+  </div>
+</header>
+
+<main id="view" class="wrap" aria-live="polite">
+  <noscript>
+    <section class="panel">
+      <h1>DompetKeluarga butuh JavaScript</h1>
+      <p>DompetKeluarga menghitung anggaran keluarga di peramban Anda. Aktifkan JavaScript untuk memakai dasbor, transaksi, anggaran, tabungan, dan laporan.</p>
+    </section>
+  </noscript>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <strong>DompetKeluarga</strong>
+      <p>Anggaran rumah tangga Keluarga Santoso, Bandung. Data contoh bulan September–November 2026 — ubah sesuka hati, semua tersimpan di perangkat Anda sendiri (localStorage) dan tidak pernah dikirim ke mana pun.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#/">Dasbor</a>
+      <a href="#/transaksi">Transaksi</a>
+      <a href="#/anggaran">Anggaran</a>
+      <a href="#/tabungan">Tabungan</a>
+      <a href="#/laporan">Laporan</a>
+    </div>
+    <button type="button" class="btn small" id="reset-data">Kembalikan data contoh</button>
+  </div>
+  <p class="wrap footer-note">Dibuat sebagai situs statis: tanpa pelacak, tanpa iklan, tanpa permintaan jaringan.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
